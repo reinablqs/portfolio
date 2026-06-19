@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+    /* --container-2xl: 20rem;  */
+    /* --font-display: 'Inter', sans-serif; */
+
+    --font-sans: "inter", sans-serif;
+
+    --color-primary: oklch(68.5% 0.169 237.323);
+    --color-dark: oklch(0.208 0.042 265.755);
+    --color-secondary: oklch(55.4% 0.046 257.417);
+    
+}
+
+@utility container {
+  margin-inline: auto;
+  padding: 16px;
+
+  @variant 2xl{
+    max-width: 1200px; 
+  }
+}
+
+.navbar-fixed {
+  @apply fixed z-9999 bg-white/70 backdrop-blur-md;
+
+}
+
+.hamburger-line{
+  @apply w-[30px] h-0.5 my-2 block bg-dark;
+}
+
+.hamburger-active > :nth-child(1) {
+  @apply rotate-45;
+}
+
+.hamburger-active > :nth-child(2) {
+  @apply scale-0;
+}
+
+.hamburger-active > :nth-child(3) {
+  @apply -rotate-45;
+}
+
