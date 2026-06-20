@@ -22,8 +22,7 @@
 }
 
 .navbar-fixed {
-  @apply fixed z-9999 bg-white/70 backdrop-blur-md;
-
+  @apply fixed z-9999 bg-white/70 backdrop-blur-md shadow-sm;
 }
 
 .hamburger-line{
